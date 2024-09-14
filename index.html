@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-slate-400">
+    <div class="main p-6 min-w-[350px] mx-auto h-screen" id="main">
+      <div id="outGame">
+        <div class="flex p-5 gap-x-5 max-w-3xl mx-auto bg-cyan-700 border rounded-full" id="form" >
+          <input type="number" name="rows" placeholder="numberRows" class="w-3/12 rounded-lg pl-3" />
+          <input type="number" name="columns" placeholder="numberColumn" class="w-3/12 pl-3 rounded-lg" />
+          <input type="number" placeholder="numberMines" name="numberMines" class="w-3/12 pl-3 rounded-lg" />
+          <button id="start" class="px-5 py-2 text-sky-500 font-bold bg-slate-200 hover:bg-sky-900 rounded-lg"> Start</button>
+        </div>
+        <div class="mt-6 mb-8 border-4 rounded-md border-cyan-700 max-w-[860px] mx-auto"></div>
+      </div>
+      <div class="hidden" id="inGame">
+        <div class="flex flex-wrap gap-y-2 py-5 h-[81.8px] px-10 justify-between bg-red-700 border rounded-full mx-auto max-w-3xl sm:flex-nowrap">
+          <div class="bg-slate-300 rounded-lg py-1 px-4 font-bold text-lg hover:bg-sky-900 hover:text-slate-100 "></div>
+          <div class="bg-slate-300 rounded-lg py-1 px-4 font-bold text-lg hover:bg-sky-900 hover:text-slate-100"> You Are Playing Game</div>
+          <button class="bg-slate-300 rounded-lg py-1 px-5 font-bold text-lg hover:bg-sky-900 hover:text-slate-100" id="reset">Reset
+          </button>
+        </div>
+        <div class="mt-6 mb-8 border-4 rounded-md border-red-700 max-w-[860px] mx-auto"></div>
+      </div>
+      <div class="overflow-x-auto overflow-y-hidden pb-8 px-8 mb-4">
+        <div class="flex flex-wrap mt-4 mx-auto shadow-[0_8px_25px_0px_rgb(37,57,136)]" id="mineSweeper" ></div>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

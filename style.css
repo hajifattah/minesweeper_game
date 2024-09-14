@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.mineHover:hover{
+    background-color: rgb(52, 118, 241) !important;
+    border-color: blue;
+    scale: 1.1;
+    cursor: pointer;
+}
